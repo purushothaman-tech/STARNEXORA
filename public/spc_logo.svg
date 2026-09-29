@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="100%" height="100%">
+  <defs>
+    <!-- Leaf Green Gradient -->
+    <linearGradient id="leafGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <!-- Adult Blue Figure Gradient -->
+    <linearGradient id="blueFigGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00a3ff" />
+      <stop offset="60%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <!-- Inner Purple Figure Gradient -->
+    <linearGradient id="purpleFigGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="60%" stop-color="#9333ea" />
+      <stop offset="100%" stop-color="#6b21a8" />
+    </linearGradient>
+
+    <!-- AI Circuit Profile Gradient -->
+    <linearGradient id="aiProfileGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <!-- SPC Text Gradient -->
+    <linearGradient id="spcTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#032b69" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <!-- AI Text Gradient -->
+    <linearGradient id="aiTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6d28d9" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Shadow below sphere -->
+  <ellipse cx="250" cy="180" rx="90" ry="12" fill="url(#shadowGrad)" />
+
+  <!-- EMBLEM SPHERE (Centered at X=250, Y=95) -->
+  <g transform="translate(150, 5)">
+    <!-- Outer Arc / Circular Atmosphere -->
+    <path d="M 15 100 A 85 85 0 1 1 180 100" fill="none" stroke="url(#blueFigGrad)" stroke-width="2.5" stroke-dasharray="3 3" opacity="0.4" />
+
+    <!-- Leaf 1 (Left Outer Leaf) -->
+    <path d="M 15 85 C 0 130 50 160 95 165 C 65 150 45 125 35 95 C 28 75 22 80 15 85 Z" fill="url(#leafGrad)" />
+
+    <!-- Leaf 2 (Inner Leaf Base Curve) -->
+    <path d="M 50 120 C 70 165 120 160 135 130 C 105 145 75 140 50 120 Z" fill="url(#leafGrad)" opacity="0.9" />
+
+    <!-- Adult Head (Blue) -->
+    <circle cx="92" cy="38" r="16" fill="url(#blueFigGrad)" />
+
+    <!-- Adult Body / Shielding Arm (Blue) -->
+    <path d="M 62 70 C 60 45 80 48 100 52 C 115 55 125 72 120 90 C 110 105 90 100 82 85 C 75 105 55 110 45 90 C 40 75 52 70 62 70 Z" fill="url(#blueFigGrad)" />
+
+    <!-- Inner Head (Purple) -->
+    <circle cx="112" cy="62" r="12" fill="url(#purpleFigGrad)" />
+
+    <!-- Inner Body (Purple) -->
+    <path d="M 98 88 C 110 75 130 82 128 102 C 125 125 90 145 85 152 C 85 135 90 110 98 88 Z" fill="url(#purpleFigGrad)" />
+
+    <!-- AI Profile / Circuit Mind (Right Side) -->
+    <g transform="translate(90, 20)">
+      <!-- Silhouette Face Profile Line -->
+      <path d="M 50 10 C 70 20 80 40 80 60 C 80 70 75 75 80 82 C 85 88 78 95 68 100" fill="none" stroke="url(#aiProfileGrad)" stroke-width="3.5" stroke-linecap="round" />
+
+      <!-- Brain Circuits -->
+      <!-- Node 1 -->
+      <path d="M 25 30 L 45 30 L 55 22" fill="none" stroke="url(#aiProfileGrad)" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="55" cy="22" r="3.5" fill="url(#aiProfileGrad)" />
+
+      <!-- Node 2 -->
+      <path d="M 20 42 L 40 42 L 62 38" fill="none" stroke="url(#aiProfileGrad)" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="62" cy="38" r="3.5" fill="url(#aiProfileGrad)" />
+
+      <!-- Node 3 -->
+      <path d="M 28 55 L 50 55 L 68 52" fill="none" stroke="url(#aiProfileGrad)" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="68" cy="52" r="3.5" fill="url(#aiProfileGrad)" />
+
+      <!-- Node 4 -->
+      <path d="M 35 68 L 52 68 L 62 78" fill="none" stroke="url(#aiProfileGrad)" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="62" cy="78" r="3.5" fill="url(#aiProfileGrad)" />
+    </g>
+
+    <!-- Top Right Sparkle Star -->
+    <path d="M 160 18 Q 160 25 167 25 Q 160 25 160 32 Q 160 25 153 25 Q 160 25 160 18 Z" fill="#9333ea" />
+  </g>
+
+  <!-- BRAND NAME "SPC AI" -->
+  <g transform="translate(250, 225)" text-anchor="middle">
+    <!-- SPC -->
+    <text x="-42" y="0" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="900" font-size="52" fill="url(#spcTextGrad)" letter-spacing="-1">SPC</text>
+    <!-- AI -->
+    <text x="58" y="0" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="900" font-size="52" fill="url(#aiTextGrad)" letter-spacing="0">AI</text>
+  </g>
+
+  <!-- SUBTITLE "Self-Promising Caretaker AI" -->
+  <text x="250" y="262" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="800" font-size="21" fill="#0f172a" letter-spacing="-0.2">Self-Promising Caretaker AI</text>
+
+  <!-- TAGLINE LINE -->
+  <g transform="translate(250, 288)">
+    <!-- Left Divider Line -->
+    <line x1="-200" y1="-4" x2="-155" y2="-4" stroke="#94a3b8" stroke-width="1" />
+
+    <!-- Words & Colored Dots -->
+    <text x="0" y="0" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="12" fill="#475569">
+      Listen <tspan fill="#2563eb">•</tspan> Understand <tspan fill="#10b981">•</tspan> Care <tspan fill="#a855f7">•</tspan> Monitor <tspan fill="#2563eb">•</tspan> Predict <tspan fill="#38bdf8">•</tspan> Support
+    </text>
+
+    <!-- Right Divider Line -->
+    <line x1="155" y1="-4" x2="200" y2="-4" stroke="#94a3b8" stroke-width="1" />
+  </g>
+</svg>
