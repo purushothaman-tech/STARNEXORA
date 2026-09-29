@@ -1,5 +1,3 @@
-<img width="1206" height="826" alt="image" src="https://github.com/user-attachments/assets/dbd4ab23-7b17-43c0-89d8-e089900450fd" /># SPC AI
-
 ## Self-Promising Caretaker AI
 
 **Listen → Understand → Care → Monitor → Predict → Support**
